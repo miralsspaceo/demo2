@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_filter">Default</string>
+    <string name="clarendon">Clarendon</string>
+    <string name="hudson">Hudson</string>
+    <string name="inkwell">Inkwell</string>
+    <string name="juno">Juno</string>
+    <string name="lark">Lark</string>
+    <string name="lofi">Lo-Fi</string>
+    <string name="ludwig">Ludwig</string>
+    <string name="mayfair">Mayfair</string>
+    <string name="nashville">Nashville</string>
+    <string name="slumber">Slumber</string>
+    <string name="xPro">X-Pro II</string>
+    <string name="exposure">Exposure</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="hue">Hue</string>
+    <string name="saturation">Saturation</string>
+    <string name="luminance">Luminance</string>
+    <string name="temperature">Temperature</string>
+    <string name="highlights">Highlights</string>
+    <string name="shadows">Shadows</string>
+    <string name="vignette">Vignette</string>
+    <string name="hsl">HSL</string>
+    <string name="sharpen">Sharpen</string>
+    <string name="grain">Grain</string>
+    <string name="film_grain">Film Grain</string>
+</resources>

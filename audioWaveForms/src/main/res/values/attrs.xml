@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AudioWaveView">
+        <attr format="color" name="waveColor" />
+        <attr format="dimension" name="chunkWidth" />
+        <attr format="dimension" name="chunkHeight" />
+        <attr format="dimension" name="minChunkHeight" />
+        <attr format="dimension" name="chunkRadius" />
+        <attr format="dimension" name="chunkSpacing" />
+        <attr format="float" name="progress" />
+        <attr format="boolean" name="animateExpansion" />
+        <attr format="boolean" name="touchable" />
+        <attr name="min" format="float" />
+        <attr name="max" format="float" />
+        <attr name="currentMin" format="float" />
+        <attr name="currentMax" format="float" />
+        <attr name="rounded" format="boolean" />
+        <attr name="backgrounddColor" format="color" />
+        <attr name="backgrounddHeight" format="dimension" />
+        <attr name="progresssColor" format="color" />
+        <attr name="progresssHeight" format="dimension" />
+        <attr name="thumbsResource" format="reference" />
+        <attr name="thumbsColor" format="color" />
+        <attr name="thumbNormalResource" format="reference" />
+        <attr name="thumbPressedResource" format="reference" />
+        <attr name="wavee_progress" format="integer" />
+        <attr name="wavee_width" format="dimension" />
+        <attr name="wavee_gap" format="dimension" />
+        <attr name="wavee_min_height" format="dimension" />
+        <attr name="wavee_corner_radius" format="dimension" />
+        <attr name="wavee_background_color" format="color" />
+        <attr name="wavee_progress_color" format="color" />
+        <attr name="wavee_gravity" format="enum">
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WaveformSeekBar">
+        <attr name="wave_progress" format="integer" />
+        <attr name="wave_width" format="dimension" />
+        <attr name="wave_gap" format="dimension" />
+        <attr name="wave_min_height" format="dimension" />
+        <attr name="wave_corner_radius" format="dimension" />
+        <attr name="wave_background_color" format="color" />
+        <attr name="wave_progress_color" format="color" />
+        <attr name="wave_gravity" format="enum">
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextRangeView">
+        <attr name="thumbSrc" format="reference"/>
+        <attr name="srcTint" format="color"/>
+        <attr name="thumbGravity" format="integer">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+        <attr name="background" format="reference"/>
+        <attr name="thumb_size" format="dimension"/>
+        <attr name="thumb_padding" format="dimension"/>
+        <attr name="wavee_progresss" format="integer" />
+        <attr name="wavee_widthh" format="dimension" />
+        <attr name="wavee_gapp" format="dimension" />
+        <attr name="wavee_min_heightt" format="dimension" />
+        <attr name="wavee_corner_radiuss" format="dimension" />
+        <attr name="wavee_background_colorr" format="color" />
+        <attr name="wavee_progress_colorr" format="color" />
+        <attr name="wavee_gravityy" format="enum">
+            <enum name="top" value="1" />
+            <enum name="center" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="show_trace" format="boolean"/>
+        <attr name="move_on_touch" format="boolean"/>
+        <attr name="selectionTint" format="color"/>
+    </declare-styleable>
+</resources>

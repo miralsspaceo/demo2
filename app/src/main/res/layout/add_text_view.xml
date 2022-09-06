@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="videoEdit"
+            type="com.app.personas_social.activity.VideoEditorActivity" />
+
+        <variable
+            name="typetext"
+            type="androidx.databinding.ObservableInt" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/llAddTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/llOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibAddText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
+                android:onClick="onClickViewEditScreen"
+                android:src="@drawable/ic_addtext"
+                />
+
+            <ImageButton
+                android:id="@+id/ibColor"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
+                android:onClick="onClickViewEditScreen"
+                android:src="@{typetext == 1?@drawable/pink_gradient:@drawable/black_gradient}"
+               />
+
+            <ImageButton
+                android:id="@+id/ibAlign"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
+                android:onClick="onClickViewEditScreen"
+                android:src="@{typetext == 2?@drawable/pink_align:@drawable/black_align}"
+                 />
+
+            <ImageButton
+                android:id="@+id/ibAdjustment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:paddingStart="25dp"
+                android:onClick="onClickViewEditScreen"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
+                android:src="@{typetext == 3?@drawable/pink_adjustment:@drawable/black_adujustmet}"
+                />
+
+            <ImageButton
+                android:id="@+id/ibFilter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:paddingStart="25dp"
+                android:paddingTop="15dp"
+                android:paddingEnd="25dp"
+                android:paddingBottom="15dp"
+                android:onClick="onClickViewEditScreen"
+                android:src="@{typetext == 4?@drawable/pink_filter:@drawable/black_filter}"
+               />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/llFont"
+                layout="@layout/layout_font"
+                android:visibility="@{typetext == 2?View.VISIBLE:View.GONE}" />
+
+            <include
+                android:id="@+id/llAlignment1"
+                layout="@layout/layout_text"
+                android:visibility="@{typetext == 3?View.VISIBLE:View.GONE}" />
+
+            <include
+                android:id="@+id/llAnimation"
+                layout="@layout/include_animation"
+                android:visibility="@{typetext == 4?View.VISIBLE:View.GONE}"/>
+
+            <include
+                android:id="@+id/llcolor"
+                layout="@layout/include_color_picker"
+                android:visibility="@{typetext == 1?View.VISIBLE:View.GONE}"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>
+

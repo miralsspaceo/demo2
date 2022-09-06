@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="message"
+            type="String" />
+
+        <variable
+            name="positiveBtnName"
+            type="String" />
+
+        <variable
+            name="negativeBtnName"
+            type="String" />
+
+        <import type="android.text.TextUtils" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack2"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_30dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/dimen_15dp"
+            app:cardElevation="@dimen/dimen_10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDialogTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_20dp"
+                    viewVisibility="@{!TextUtils.isEmpty(title)}"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@{title}"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDialogMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingBottom="@dimen/dimen_12dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@{message}"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDialogTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLine1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/gray"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDialogMsg" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnNegative"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    viewVisibility="@{!TextUtils.isEmpty(negativeBtnName)}"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@{negativeBtnName}"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    app:layout_constraintEnd_toStartOf="@id/view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvLine1" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="0.5dp"
+                    android:layout_height="@dimen/dimen_0dp"
+                    viewVisibility="@{!TextUtils.isEmpty(negativeBtnName)}"
+                    android:background="@color/gray"
+                    app:layout_constraintBottom_toBottomOf="@id/btnPositive"
+                    app:layout_constraintEnd_toStartOf="@id/btnPositive"
+                    app:layout_constraintStart_toEndOf="@id/btnNegative"
+                    app:layout_constraintTop_toTopOf="@id/btnPositive" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPositive"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="center"
+                    android:text="@{positiveBtnName}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_blue1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/view"
+                    app:layout_constraintTop_toBottomOf="@id/tvLine1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</layout>

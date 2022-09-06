@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="videoEdit"
+            type="com.app.personas_social.activity.VideoEditorActivity" />
+
+        <variable
+            name="typetext"
+            type="androidx.databinding.ObservableInt" />
+
+        <import type="android.view.View" />
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ccAnimation"
+    android:padding="@dimen/dimen_10dp">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIn"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginEnd="@dimen/dimen_4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:textColor="@{typetext == 1?@color/white:@color/black}"
+        android:background="@{typetext == 1?@drawable/bg_pink_gradiant:@drawable/bg_white_border}"
+        android:onClick="onClickViewEditScreen"
+        android:padding="@dimen/dimen_2dp"
+        android:text="@string/in"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOut"
+        style="@style/Button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_marginStart="@dimen/dimen_4dp"
+        android:layout_marginEnd="@dimen/dimen_4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:textColor="@{typetext == 2?@color/white:@color/black}"
+        android:background="@{typetext == 2?@drawable/bg_pink_gradiant:@drawable/bg_white_border}"
+        android:onClick="onClickViewEditScreen"
+        android:padding="@dimen/dimen_2dp"
+        android:text="@string/out"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBasic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnIn"
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/basic"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBasic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBasic"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLoop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightblack"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/loop"
+        app:layout_constraintTop_toBottomOf="@+id/rvBasic"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLoop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:clipToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLoop"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</layout>

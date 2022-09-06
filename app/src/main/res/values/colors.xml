@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#00000029</color>
+    <color name="blue">#365FBF</color>
+    <color name="colorBlue4">#430000FF</color>
+    <color name="pink">#F32677</color>
+    <color name="light_gray">#EEF0F6</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="text_color">#222B45</color>
+    <color name="red">#FF1010</color>
+    <color name="bg_white">#EEF0F6</color>
+    <color name="colorBlack2">#8A000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="background_black">#CC222B45</color>
+    <color name="dark_gray">#393944</color>
+    <color name="black_blur">#96393944</color>
+    <color name="color1">#96393944</color>
+    <color name="color2">#F03E3E</color>
+    <color name="color3">#F59F00</color>
+    <color name="color4">#FCC419</color>
+    <color name="color5">#74B816</color>
+    <color name="color6">#37B14D</color>
+    <color name="color7">#4263EB</color>
+    <color name="darkblue">#263767</color>
+    <color name="lightblue">#88A7FF</color>
+    <color name="light_red">#F03E3E</color>
+    <color name="dark_red">#AE2020</color>
+    <color name="light_yellow">#F59F00</color>
+    <color name="dark_yellow">#E59500</color>
+    <color name="light_orrange">#FC8B19</color>
+    <color name="dark_orrange">#F96400</color>
+    <color name="light_aqua">#169CB8</color>
+    <color name="dark_aqua">#0B5C59</color>
+    <color name="light_green">#37B14D</color>
+    <color name="dark_green">#1C5927</color>
+    <color name="light_blue">#4263EB</color>
+    <color name="dark_blue">#4263EB</color>
+    <color name="lightblack">#252533</color>
+    <color name="backgroundcolor">#EEF0F6</color>
+    <color name="trasparent">#000000</color>
+    <color name="trasparentgreen">#400B5C59</color>
+    <color name="light_grayyy">#00000029</color>
+    <color name="blue_line">#222B45</color>
+
+
+</resources>

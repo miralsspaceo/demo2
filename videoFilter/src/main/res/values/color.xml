@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="trasparentgreen">#400B5C59</color>
+    <color name="trasparentgreen2">#260B5C59</color>
+    <color name="trasparentBlack">#99000000</color>
+    <color name="trasparentgreen3">#800B5C59</color>
+    <color name="trasparentwhite">#CCFFFFFF</color>
+    <color name="trasparentpink">#35F32677</color>
+</resources>

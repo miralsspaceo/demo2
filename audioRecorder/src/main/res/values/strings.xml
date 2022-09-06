@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="time_format_hms" translatable="false">%02d:%02d:%02d</string>
+    <string name="time_format_ms" translatable="false">%02d:%02d</string>
+</resources>

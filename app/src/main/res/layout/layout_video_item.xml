@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="videoItem"
+            type="com.app.personas_social.model.VideoItem" />
+
+        <variable
+            name="viewModel"
+            type="com.app.personas_social.viewmodel.VideoListViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardPreventCornerOverlap="true"
+        android:layout_margin="@dimen/dimen_5dp"
+        app:cardCornerRadius="@dimen/dimen_10dp"
+        android:elevation="@dimen/dimen_9dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVideoThumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                app:loadImage="@{videoItem}"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivVideoSelected"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:viewVisibility="@{videoItem.selected}"
+                android:alpha="0.5"
+                android:background="@drawable/layout_thumbils"
+                app:layout_constraintBottom_toBottomOf="@id/ivVideoThumb"
+                app:layout_constraintEnd_toEndOf="@id/ivVideoThumb"
+                app:layout_constraintStart_toStartOf="@id/ivVideoThumb"
+                app:layout_constraintTop_toTopOf="@id/ivVideoThumb" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:viewVisibility="@{videoItem.selected}"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:src="@drawable/select_pink"
+                app:layout_constraintStart_toStartOf="@id/ivVideoThumb"
+                app:layout_constraintTop_toTopOf="@id/ivVideoThumb" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:gravity="end"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_12sp"
+                android:text="2:00"
+                android:alpha="0.6"
+                android:paddingTop="@dimen/dimen_2dp"
+                android:paddingBottom="@dimen/dimen_2dp"
+                android:paddingStart="@dimen/dimen_6dp"
+                android:paddingEnd="@dimen/dimen_6dp"
+                android:background="@drawable/time_round_background"
+                duration="@{videoItem.videoDuration}"
+                isShowHours="@{false}"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                app:layout_constraintEnd_toStartOf="@+id/img_play"
+                app:layout_constraintBottom_toBottomOf="@id/ivVideoThumb"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:gravity="center"
+                android:src="@drawable/play_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

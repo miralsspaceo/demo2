@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+        <variable
+            name="typealign"
+            type="androidx.databinding.ObservableInt" />
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cclayoutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_14sp"
+        android:paddingEnd="@dimen/dimen_14sp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAlignLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@{typealign == 1?@drawable/ic_left_align_pink:@drawable/ic_left_align_black}"
+            android:onClick="onClickViewEditScreen"
+            app:layout_constraintEnd_toStartOf="@id/ivAlignCenter"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAlignCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5dp"
+            android:onClick="onClickViewEditScreen"
+            android:src="@{typealign == 2?@drawable/ic_center_align_pink:@drawable/ic_center_align_black}"
+            app:layout_constraintEnd_toStartOf="@id/ivAlignRight"
+            app:layout_constraintStart_toEndOf="@id/ivAlignLeft"
+            app:layout_constraintTop_toTopOf="@id/ivAlignLeft" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAlignRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@{typealign == 3?@drawable/ic_right_align_pink:@drawable/ic_right_align_black}"
+            android:onClick="onClickViewEditScreen"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivAlignCenter"
+            app:layout_constraintTop_toTopOf="@id/ivAlignLeft" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivAlignLeft">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_spacetext" />
+            </LinearLayout>
+
+
+
+            <SeekBar
+                android:id="@+id/skStickerSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/dimen_3dp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="100"
+                android:thumbTint="@color/pink"
+                android:progressTint="@color/pink"
+                android:maxHeight="@dimen/dimen_5dp"
+                android:minHeight="@dimen/dimen_5dp"
+                android:progress="100"
+                android:splitTrack="false"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:text="100"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLetterSpacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_text_spacing" />
+            </LinearLayout>
+
+
+            <SeekBar
+                android:id="@+id/skLetterSpacing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/dimen_3dp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:thumbTint="@color/pink"
+                android:progressTint="@color/pink"
+                android:maxHeight="@dimen/dimen_5dp"
+                android:min="0"
+                android:minHeight="@dimen/dimen_5dp"
+                android:progress="0"
+                android:splitTrack="false"
+               />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:text="0"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLineSpacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/llLetterSpacing">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_line_spacing" />
+            </LinearLayout>
+
+
+
+            <SeekBar
+                android:id="@+id/skLineSpacing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/dimen_3dp"
+                android:layout_weight="1"
+                android:indeterminate="false"
+                android:max="10"
+                android:thumbTint="@color/pink"
+                android:progressTint="@color/pink"
+                android:maxHeight="@dimen/dimen_5dp"
+                android:minHeight="@dimen/dimen_5dp"
+                android:progress="0"
+                android:splitTrack="false"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textLineSpacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dimen_16sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:text="0"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

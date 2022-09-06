@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:elevation="@dimen/dimen_5dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnClose"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/closeicon"
+            android:layout_gravity="start|center_vertical"
+            android:layout_margin="@dimen/dimen_4dp"
+            android:scaleType="centerInside"
+            android:visibility="visible" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvToolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_18sp"
+            android:drawablePadding="@dimen/dimen_2dp"
+            android:text="@string/gallery" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

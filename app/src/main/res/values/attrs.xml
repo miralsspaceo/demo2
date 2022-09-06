@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NamedSpinner">
+        <attr name="android:name" format="string|reference" />
+        <attr name="android:textAppearance" format="reference" />
+        <attr name="android:entries" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="StickerView">
+        <attr name="showIcons" format="boolean" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="bringToFrontCurrentSticker" format="boolean" />
+        <attr name="sborderColor" format="color" />
+        <attr name="borderAlpha" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekBarText">
+        <attr name="Smin" format="float" />
+        <attr name="Smax" format="float" />
+        <attr name="ScurrentMin" format="float" />
+        <attr name="ScurrentMax" format="float" />
+        <attr name="Srounded" format="boolean" />
+        <attr name="SbackgroundColor" format="color" />
+        <attr name="SbackgroundHeight" format="dimension" />
+        <attr name="SprogressColor" format="color" />
+        <attr name="SprogressHeight" format="dimension" />
+        <attr name="SthumbsResource" format="reference" />
+        <attr name="SthumbNormalResource" format="reference" />
+        <attr name="SthumbPressedResource" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TextRangeView">
+        <attr name="thumbSrc" format="reference"/>
+        <attr name="srcTint" format="color"/>
+        <attr name="thumbGravity" format="integer">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+        <attr name="background" format="reference"/>
+        <attr name="thumb_size" format="dimension"/>
+        <attr name="thumb_padding" format="dimension"/>
+        <attr name="show_trace" format="boolean"/>
+        <attr name="move_on_touch" format="boolean"/>
+        <attr name="selectionTint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="GPUImageView">
+        <attr name="gpuimage_surface_type" format="enum">
+            <enum name="surface_view" value="0" />
+            <enum name="texture_view" value="1" />
+        </attr>
+        <attr name="gpuimage_show_loading" format="boolean"/>
+    </declare-styleable>
+</resources>

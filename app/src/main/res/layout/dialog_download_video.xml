@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.app.personas_social.viewmodel.BaseViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_blur"
+    >
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrows_download"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSavetoGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_to_gallery"
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@id/ivDownload"/>
+
+    <SeekBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:clickable="false"
+        android:progress="@{viewModel.exportProgress}"
+        android:progressTint="@color/white"
+        android:secondaryProgress="100"
+        android:thumbTint="@color/pink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSavetoGallery" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_18sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@{viewModel.progressText}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VideoFrameView">
+        <attr name="thumbsDrawable" format="reference" />
+        <attr name="thumbNormalDrawable" format="reference" />
+        <attr name="thumbPressedDrawable" format="reference" />
+        <attr name="isDrawableSet" format="boolean" />
+        <attr name="isThumbDisplay" format="boolean" />
+    </declare-styleable>
+
+
+</resources>

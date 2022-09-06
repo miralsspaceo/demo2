@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_discardVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:text="@string/discard_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_areyousure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_14sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/text_color"
+        android:text="@string/are_you_sure_you_want_to_discard_this_video"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discardVideo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDiscard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:text="@string/discard_video"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:padding="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:background="@drawable/bg_react"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_areyousure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_No"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16sp"
+        android:text="@string/no"
+        android:gravity="center"
+        android:textColor="@color/text_color"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_20dp"
+        android:padding="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:background="@drawable/bg_react"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiscard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

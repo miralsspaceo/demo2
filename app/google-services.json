@@ -1,0 +1,204 @@
+{
+  "project_info": {
+    "project_number": "61701853821",
+    "firebase_url": "https://mii-tv.firebaseio.com",
+    "project_id": "mii-tv",
+    "storage_bucket": "mii-tv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61701853821:android:22033f1f9449ae0cfb5714",
+        "android_client_info": {
+          "package_name": "com.app.personas_social"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61701853821-beouiillqh0din275dk0se9vpq7q5m6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.personas_social",
+            "certificate_hash": "5cc7dbe149c9deed28ba3d6b776d8b6a97db64da"
+          }
+        },
+        {
+          "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqnlmzkwa0D_1zWJcxbgOUAhV6YIFVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61701853821-2pbimolk7etbpcqhab4vc7pnsuktputk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.miitv",
+                "app_store_id": "1503070150"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61701853821:android:08eaf24ca1ee8a49fb5714",
+        "android_client_info": {
+          "package_name": "com.miitv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqnlmzkwa0D_1zWJcxbgOUAhV6YIFVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61701853821-2pbimolk7etbpcqhab4vc7pnsuktputk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.miitv",
+                "app_store_id": "1503070150"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61701853821:android:e40706c21f1a0e3dfb5714",
+        "android_client_info": {
+          "package_name": "com.miitv.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqnlmzkwa0D_1zWJcxbgOUAhV6YIFVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61701853821-2pbimolk7etbpcqhab4vc7pnsuktputk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.miitv",
+                "app_store_id": "1503070150"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61701853821:android:1be30542b6d6ae57fb5714",
+        "android_client_info": {
+          "package_name": "com.miitv.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqnlmzkwa0D_1zWJcxbgOUAhV6YIFVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61701853821-2pbimolk7etbpcqhab4vc7pnsuktputk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.miitv",
+                "app_store_id": "1503070150"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61701853821:android:51b6563ba720d049fb5714",
+        "android_client_info": {
+          "package_name": "com.miitv.publicdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaqnlmzkwa0D_1zWJcxbgOUAhV6YIFVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61701853821-sclcob44ts3ot9d3q9dsskigbfpn0r0n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "61701853821-2pbimolk7etbpcqhab4vc7pnsuktputk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.miitv",
+                "app_store_id": "1503070150"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

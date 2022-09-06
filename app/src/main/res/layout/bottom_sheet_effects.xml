@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dimen_10dp"
+    android:background="@drawable/bg_bottom_sheet">
+
+  <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/tvEffectName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/popular"
+      android:textSize="@dimen/dimen_14sp"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/closeicon"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEffectName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEffects"
+        itemDecoration="@{true}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        tools:listitem="@layout/raw_music_device"
+        android:nestedScrollingEnabled="true"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvEffectName"
+        android:layout_marginBottom="@dimen/dimen_60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
